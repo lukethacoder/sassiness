@@ -5,6 +5,7 @@ A small package that holds beautiful modular SASS Mixins
 *put logo here*
 
 ***
+
 ##Install
 
 Install using npm `npm i sassiness`
@@ -12,6 +13,7 @@ Install using npm `npm i sassiness`
 Place `@include "~sassiness/sassiness.sass"` at the top of your `App.sass` (or `App.scss`)
 
 ***
+
 ##Example Usage 
 
 Below is an example of how to use the mixins. Each other mixin works the same way; by placing the variables inside the ($).
@@ -28,7 +30,7 @@ Below is an example of how to use the mixins. Each other mixin works the same wa
 ```scss
 /* in your App.sass file ('$' are your variables) */
 .div 
-@include center-box($width, $margin_vertical)
+    @include center-box($width, $margin_vertical)
 ```
 
 ```css
@@ -37,7 +39,9 @@ Below is an example of how to use the mixins. Each other mixin works the same wa
 	width: 80%;
 	margin: 25px 10%;
 ```
+
 ***
+
 #Current Mixins Available
 
 Below is a list of possible @include mixins. If you wish to see what they are all doing behind the scenes, look in the node_modules/sassiness/sassiness.sass file.
@@ -67,4 +71,5 @@ Below is a list of possible @include mixins. If you wish to see what they are al
 // sets padding + margins to 0 and list-style: none
 @include list-reset;  
 ```
+
 ***
