@@ -3,12 +3,19 @@
   "version": "0.1.0",
   "description": "A small package that holds beautiful modular SASS Mixins",
   "author": "Luke Secomb (https://lukesecomb.digital)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukethacoder/sassiness"
+  },
   "main": "index.js",
   "keywords": [
     "SASS"
   ],
   "author": "Luke Secomb <hello@lukesecomb.digital> (https://lukesecomb.digital)",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lukethacoder/sassiness/issues"
+  },
   "dependencies": {},
   "peerDependencies": {
     "react": ">=15.0.1",
