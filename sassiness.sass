@@ -1,0 +1,52 @@
+@mixin center-box($width, $margin_vertical)
+    width: $width
+    margin: $margin_vertical (100 - $width) / 2
+
+@mixin list-reset {
+  padding: 0
+  margin: 0
+  li
+    padding: 0
+    margin: 0
+    list-style: none
+
+@mixin box-shadow($color, $radius, $spread) 
+    -webkit-box-shadow: 0px 0px $radius $spread $color
+    -moz-box-shadow: 0px 0px $radius $spread $color
+    box-shadow: 0px 0px $radius $spread $color
+
+@mixin background-image($url, $size, $position, $repeat, $color) 
+    background: $url
+    -webkit-background: $url
+    -moz-background: $url
+    -o-background: $url
+
+    background-size: $size
+    -webkit-background-size: $size
+    -moz-background-size: $size
+    -o-background-size: $size
+
+    background-position: $position
+    -webkit-background-position: $position
+    -moz-background-position: $position
+    -o-background-position: $position
+
+    background-repeat: $repeat
+    -webkit-background-repeat: $repeat
+    -moz-background-repeat: $repeat
+    -o-background-repeat: $repeat
+
+    background-color: $color
+
+@mixin hover-transition($sec) 
+    -webkit-transition: all $sec ease-in-out
+    -moz-transition: all $sec ease-in-out
+    -ms-transition: all $sec ease-in-out
+    -o-transition: all $sec ease-in-out
+    transition: all $sec ease-in-out
+
+@mixin border-radius($size) 
+    border-radius: $size
+    -moz-border-radius: $size
+    -webkit-border-radius: $size
+

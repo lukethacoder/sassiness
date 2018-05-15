@@ -1,0 +1,27 @@
+{
+  "name": "sassiness",
+  "version": "0.1.0",
+  "description": "A small package that holds beautiful modular SASS Mixins",
+  "author": "Luke Secomb (https://lukesecomb.digital)",
+  "main": "index.js",
+  "keywords": [
+    "SASS"
+  ],
+  "author": "Luke Secomb <hello@lukesecomb.digital> (https://lukesecomb.digital)",
+  "license": "ISC",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=15.0.1",
+    "react-dom": ">=15.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "react": ">=15.0.1",
+    "react-dom": ">=15.0.1",
+    "sass-loader": "^7.0.1",
+    "style-loader": "^0.21.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
