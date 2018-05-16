@@ -14,7 +14,8 @@ before-install:
 install:
   - npm install
 
-script: ./travis.js
+script: 
+  - node travis.js
 
 deploy:
   provider: npm
