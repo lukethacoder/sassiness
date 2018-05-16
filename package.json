@@ -1,7 +1,7 @@
 {
   "name": "sassiness",
   "version": "1.2.0",
-  "description": "A small package that holds beautiful modular SASS Mixins",
+  "description": "A small package that holds beautiful, reusable and modular SASS Mixins",
   "author": "Luke Secomb <hello@lukesecomb.digital> (https://lukesecomb.digital)",
   "repository": {
     "type": "git",
