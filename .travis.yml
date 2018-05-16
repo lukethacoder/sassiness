@@ -15,7 +15,12 @@ install:
   - npm install
 
 script:
-  - "travis.js"
+  - ./travis.js
+
+deploy:
+  provider: npm
+  email: NPM_EMAIL
+  api_key: NPM_API_KEY
 
 # Send coverage data to Coveralls
 # after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
