@@ -4,6 +4,8 @@ A small package that holds beautiful modular SASS Mixins
 
 *put logo here*
 
+[![Build Status](https://travis-ci.org/lukethacoder/sassiness.svg?branch=master)](https://travis-ci.org/lukethacoder/sassiness)
+
 ***
 
 ##Install
