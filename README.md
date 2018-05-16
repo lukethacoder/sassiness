@@ -8,9 +8,18 @@ A small package that holds beautiful modular SASS Mixins
 
 ##Install
 
-Install using npm `npm i sassiness`
+Using npm 
 
-Place `@include "~sassiness/sassiness.sass"` at the top of your `App.sass` (or `App.scss`)
+```
+$ npm i sassiness
+```
+
+
+At the top of your `App.sass` (or `App.scss`)
+
+```
+@include "~sassiness/sassiness.sass"
+```
 
 ***
 
@@ -46,12 +55,27 @@ Below is an example of how to use the mixins. Each other mixin works the same wa
 
 Below is a list of possible @include mixins. If you wish to see what they are all doing behind the scenes, look in the node_modules/sassiness/sassiness.sass file.
 
+### center-box
+
+```scss
+@include center-box($width, $margin_vertical)
+```
+
 ###background-image
+
 ```scss
 @include background-image($url, $size, $position, $repeat, $color) 
 ```
 
+### background-image
+
+```scss
+// $orientation can be either 'vertical', 'horzontal', 'deg value' or left blank for radial
+@include bg-gradient($start-color, $end-color, $orientation)
+```
+
 ###hover-transition
+
 ```scss
 @include hover-transition($sec) 
 ```
