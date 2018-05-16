@@ -1,13 +1,21 @@
-language: node_js
+language: sass
+
+cache:
+  directories:
+    - node_modules
 
 node_js:
   - stable
+
+before-install:
+  - npm install cache verify
+  - npm update
 
 install:
   - npm install
 
 script:
-  - npm test
+  - "travis.js"
 
 # Send coverage data to Coveralls
 # after_script: "cat coverage/lcov.info | node_modules/coveralls/bin/coveralls.js"
