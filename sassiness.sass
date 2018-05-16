@@ -1,3 +1,6 @@
+@function type-of($value)
+    @return type-of($value) 
+    
 @mixin center-box($width, $margin_vertical)
     width: $width
     margin: $margin_vertical (100 - $width) / 2
@@ -37,6 +40,21 @@
     -o-background-repeat: $repeat
 
     background-color: $color
+
+@mixin bg-gradient($start-color, $end-color, $orientation) 
+    background: $start-color
+    @if $orientation == 'vertical' 
+        background: -webkit-linear-gradient(top, $start-color, $end-color)
+        background: linear-gradient(to bottom, $start-color, $end-color)
+    @else if $orientation == 'horizontal' 
+        background: -webkit-linear-gradient(left, $start-color, $end-color)
+        background: linear-gradient(to right, $start-color, $end-color)
+    @else if type-of($orientation) == 'number'
+        background: -webkit-linear-gradient($orientation, $start-color, $end-color)
+        background: linear-gradient($orientation, $start-color, $end-color)
+    @else
+        background: -webkit-radial-gradient(center, ellipse cover, $start-color, $end-color)
+        background: radial-gradient(ellipse at center, $start-color, $end-color)
 
 @mixin hover-transition($sec) 
     -webkit-transition: all $sec ease-in-out
