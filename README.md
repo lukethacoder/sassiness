@@ -72,4 +72,16 @@ Below is a list of possible @include mixins. If you wish to see what they are al
 @include list-reset;  
 ```
 
+### clearfix
+```scss
+// Clearfix hack for parent with floating children
+@include clearfix
+```
+
+### placeholder
+```scss
+// $fontsize is optional
+@include placeholder($color, $fontsize)
+```
+
 ***
