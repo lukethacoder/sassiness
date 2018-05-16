@@ -1,17 +1,17 @@
 {
   "name": "sassiness",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "description": "A small package that holds beautiful modular SASS Mixins",
-  "author": "Luke Secomb (https://lukesecomb.digital)",
+  "author": "Luke Secomb <hello@lukesecomb.digital> (https://lukesecomb.digital)",
   "repository": {
     "type": "git",
     "url": "https://github.com/lukethacoder/sassiness"
   },
   "main": "index.js",
   "keywords": [
-    "SASS"
+    "SASS",
+    "Mixins"
   ],
-  "author": "Luke Secomb <hello@lukesecomb.digital> (https://lukesecomb.digital)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lukethacoder/sassiness/issues"
