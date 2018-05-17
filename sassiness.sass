@@ -94,3 +94,19 @@
         color: $color
         @if $size != ""
             font-size: $size
+
+@mixin button-default($color, $bg-color, $radius, $thickness, $border-color, $vertical-padding, $horizontal-padding)
+    color: $color
+    background-color: $bg-color
+    @include border-radius($radius)
+    border: $thickness solid
+    @if $border-color != ""
+        border-color: $color
+    @else $border-color: $border-color
+    @if $horizontal-padding != ""
+        padding: $vertical-padding
+    @else 
+        padding: $vertical-padding $horizontal-padding
+    &:hover
+        color: $bg-color
+        background-color: $color
