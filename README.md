@@ -20,7 +20,7 @@ $ npm i sassiness
 At the top of your `App.sass` (or `App.scss`)
 
 ```
-@include "~sassiness/sassiness.sass"
+@import "~sassiness/sassiness.sass"
 ```
 
 ***
