@@ -102,7 +102,8 @@
     border: $thickness solid
     @if $border-color != ""
         border-color: $color
-    @else $border-color: $border-color
+    @else
+        $border-color: $border-color
     @if $horizontal-padding != ""
         padding: $vertical-padding
     @else 
