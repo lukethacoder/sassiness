@@ -110,4 +110,10 @@ Below is a list of possible @include mixins. If you wish to see what they are al
 @include placeholder($color, $fontsize)
 ```
 
+### button-default
+```scss
+// $border-color is optional (defaults to $color), $horizontal padding is optional (defaults to $vertical-padding)
+@include button-default($color, $bg-color, $radius, $thickness, $border-color, $vertical-padding, $horizontal-padding)
+```
+
 ***
