@@ -8,7 +8,7 @@ A small package that holds beautiful modular SASS Mixins
 
 ***
 
-##Install
+## Install
 
 Using npm 
 
@@ -25,11 +25,11 @@ At the top of your `App.sass` (or `App.scss`)
 
 ***
 
-##Example Usage 
+## Example Usage 
 
 Below is an example of how to use the mixins. Each other mixin works the same way; by placing the variables inside the ($).
 
-###center-box
+### center-box
 
 ```scss
 /* this is imported */
@@ -53,7 +53,7 @@ Below is an example of how to use the mixins. Each other mixin works the same wa
 
 ***
 
-#Current Mixins Available
+# Current Mixins Available
 
 Below is a list of possible @include mixins. If you wish to see what they are all doing behind the scenes, look in the node_modules/sassiness/sassiness.sass file.
 
@@ -63,7 +63,7 @@ Below is a list of possible @include mixins. If you wish to see what they are al
 @include center-box($width, $margin_vertical)
 ```
 
-###background-image
+### background-image
 
 ```scss
 @include background-image($url, $size, $position, $repeat, $color) 
@@ -76,23 +76,23 @@ Below is a list of possible @include mixins. If you wish to see what they are al
 @include bg-gradient($start-color, $end-color, $orientation)
 ```
 
-###hover-transition
+### hover-transition
 
 ```scss
 @include hover-transition($sec) 
 ```
 
-###border-radius
+### border-radius
 ```scss
 @include border-radius($size) 
 ```
 
-###box-shadow
+### box-shadow
 ```scss
 @include box-shadow($color, $radius, $spread)  
 ```
 
-###list-reset
+### list-reset
 ```scss
 // sets padding + margins to 0 and list-style: none
 @include list-reset;  
